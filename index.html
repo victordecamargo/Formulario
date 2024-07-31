@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
+    <script src="funcoes.js" defer></script>
 </head>
 <body>
     <div class="main-login">
-        <div class ="left-login">
-            <h1>Faça login<br> E entre para o nosso time</h1>
-            <img src="astronaut-animate.svg" class ="left-login-image" alt="">
+        <div class="left-login">
+            <h1>Faça o Cadastro<br> E entre para o nosso time</h1>
+            <img src="astronaut-animate.svg" class="left-login-image" alt="">
         </div>
-        <div class ="right-login">
-            <div class = "card-login">
+        <div class="right-login">
+            <div class="card-login">
                 <h1>LOGIN</h1>
-                <div class = "textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                <div class="textfield">
+                    <label for="usuario">Digite um nome de Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuário">
                 </div>
-            <div class = "textfield">
+                <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Sua senha">
+                    <input type="password" id="senha" name="senha" size="15" required placeholder="Sua senha">
                 </div>
-                <button class="btn-login">Login</button>
+                <div class="textfield">
+                    <label for="confirma">Digite novamente a senha</label>
+                    <input type="password" id="confirma" name="confirma" size="15" required placeholder="Sua senha">
+                </div>
+                <button class="btn-login" id="login-button">Login</button>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
